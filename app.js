@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
-const routes = require('./routes/tasks')
+const tasks = require('./routes/tasks')
 
 app.get('/hello', (req, res) => {
     res.send('Task manager App')
 })
+
+app.use('/api/v1/tasks',tasks)
 
 const port = 3000
 

@@ -11,7 +11,7 @@ app.use(express.json());
 
 // routes
 app.get('/hello', (req, res) => {
-  res.send('Task manager Ap');
+  res.send('Task manager A');
 });
 
 app.use('/api/v1/tasks', tasks);

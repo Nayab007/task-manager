@@ -28,4 +28,4 @@ const start = async () => {
   }
 }
 
-start()
+start();

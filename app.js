@@ -2,7 +2,8 @@
 const express = require('express');
 const app = express();
 const tasks = require('./routes/tasks');
-const connectDB = require('./db/connect')
+const connectDB = require('./db/connect');
+require('dotenv').config();
 
 // middleware
 

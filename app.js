@@ -17,6 +17,14 @@ app.use('/api/v1/tasks', tasks);
 
 const port = 3000;
 
-const 
+const start = async () => {
+  try {
+    await connectDB()
+    app.listen(port, () => 
+    console.log(`Server is on port ${port}...`))
+  } catch (error) {
+    console.log(error)
+  }
+}
 
-app.listen(port, console.log(`Server is on port ${port}...`));
+start()

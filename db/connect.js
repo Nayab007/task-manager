@@ -5,7 +5,7 @@ const connectionString =
 
 
 const connectDB = (url) => {
-    return mongoose.connect(url, {
+    return mongoose.connect(connectionString, {
       useNewUrlParser: true,
       useCreateIndex: true,
       useFindAndModify: false,
